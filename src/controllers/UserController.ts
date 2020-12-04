@@ -6,7 +6,7 @@ class UserController{
   async create(request: Request, response: Response){
     try{
   
-      const { cpf} = request.body;  
+      const { cpf } = request.body;  
     
         const createUser = new CreateUserService();
     
@@ -19,8 +19,6 @@ class UserController{
      }catch(err){
        return response.status(400).json({ error: err.message});
      }
-
-
   }
 }
 

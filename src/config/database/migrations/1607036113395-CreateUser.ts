@@ -14,21 +14,24 @@ export class CreateUser1607036113395 implements MigrationInterface {
                 default: 'uuid_generate_v4()'
                },
                {
-                   name: 'name',
-                   type: 'varchar',
+                    name: 'name',
+                    type: 'varchar',
+                    isNullable: true,
                },
                {
-                   name: 'cpf',
-                   type: 'varchar',
-                   isNullable: false,
-                   isUnique: true
+                    name: 'cpf',
+                    type: 'varchar',
+                    isNullable: false,
+                    isUnique: true,
                },{
-                   name: 'password',
-                   type: 'varchar',
-                   isNullable: false
-               }, {
-                   name: 'birthday',
-                   type: 'varchar',
+                    name: 'password',
+                    type: 'varchar',
+                    isNullable: true
+               }, 
+               {
+                    name: 'birthday',
+                    type: 'varchar',
+                    isNullable: true
                }
             ]
         }))
