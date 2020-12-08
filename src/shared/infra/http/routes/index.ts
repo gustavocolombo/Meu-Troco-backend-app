@@ -1,5 +1,5 @@
 import express from 'express';
-import routesSell from './sell.routes';
+import routesSell from '@shared/infra/http/routes/routes.sell';
 
 const routes = express.Router();
 

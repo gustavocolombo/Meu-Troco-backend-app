@@ -2,8 +2,8 @@ import User from '../models/User';
 import { getRepository } from 'typeorm';
 import { compare } from 'bcryptjs'
 import { sign } from 'jsonwebtoken';
-import auth from '../config/auth';
-import AppError from '../errors/AppError';
+import auth from '../../../config/auth';
+import AppError from '@shared/errors/AppError';
 
 
 interface Request {

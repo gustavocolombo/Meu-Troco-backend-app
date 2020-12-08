@@ -1,5 +1,5 @@
-import User from '../models/User';
-import CreateUserService from '../services/CreateUserService';
+import User from '@modules/users/infra/typeorm/entities/User';
+import CreateUserService from '@modules/users/services/CreateUserService';
 import { Request, Response } from 'express';
 
 class UserController{
