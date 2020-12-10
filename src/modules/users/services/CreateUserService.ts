@@ -1,4 +1,5 @@
 import User from '@modules/users/infra/typeorm/entities/User';
+import ICreateUserDTO from '@modules/users/dtos/ICreateUserDTO'
 import { getRepository } from 'typeorm';
 
 interface Request{
@@ -21,7 +22,7 @@ class CreateUserService{
       cpf,
     });
 
-    await usersRepository.save(user);
+    // await usersRepository.save(user);
 
   return user;  
   }
